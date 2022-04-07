@@ -1,0 +1,1 @@
+install-windowsfeature -name server-gui-mgmt-infra,server-gui-shell

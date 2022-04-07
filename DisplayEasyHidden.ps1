@@ -1,8 +1,8 @@
 $Spacer = "_" * 200
-Write-Output "Displaying running tasks: "
+Write-Output "Displaying running scheduled tasks: "
 Get-ScheduledTask | ? state -eq running
 Write-Output "$Spacer"
-Write-Output "Displaying all tasks sorted by date: "
+Write-Output "Displaying all scheduled tasks sorted by date: "
 Get-ScheduledTask | Get-ScheduledTaskInfo | Sort-Object -Property "LastRunTime" | Format-Table
 Write-Output "$Spacer"
 Write-Output "Displaying all run keys: "
