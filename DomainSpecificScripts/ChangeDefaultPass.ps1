@@ -10,7 +10,7 @@ $PasswordChanges = @('munson',
 					'lab-worker',
 					'ta',
 					'ga')
-$NewPassword = "Bingus01!"			
+$NewPassword = "Password321!"			
 foreach ($user in $PasswordChanges){
 	try {
 		Set-ADAccountPassword -Identity $user -NewPassword (ConvertTo-SecureString -AsPlainText $NewPassword -Force) 
